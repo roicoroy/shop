@@ -19,13 +19,4 @@
     </ion-col>
   </ion-row>
 
-  <mat-grid-list cols="1" rowHeight="120px">
-    @for (item of testData; track item.id) {
-    <mat-grid-tile h [colspan]="'1'" [rowspan]="'1.5'" [style.background]="'#EEFF'">
-      <img src="assets/shapes.svg" alt="">
-      {{ item.text }}
-    </mat-grid-tile>
-    }
-  </mat-grid-list>
-
 </ion-content>

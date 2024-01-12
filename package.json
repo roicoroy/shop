@@ -5,8 +5,8 @@
   "scripts": {
     "shop": " cd applications && cd medusa-store && npx medusa develop",
     "next": "cd applications && cd medusa-store-storefront && yarn dev",
-    "ion": " cd applications && cd ion-medusa-store-storefront && ionic serve",
-    "start:dev": "concurrently \"yarn shop\" \"yarn next\" \"yarn ion\""
+    "ion": " cd applications && cd ion-medusa-storefront && ionic serve",
+    "start:medusa": "concurrently \"yarn shop\" \"yarn next\""
   },
   "author": "",
   "license": "ISC",

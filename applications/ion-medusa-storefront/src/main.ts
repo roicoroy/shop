@@ -55,16 +55,26 @@ bootstrapApplication(AppComponent, {
     { provide: RouteReuseStrategy, useClass: IonicRouteStrategy },
     provideIonicAngular(),
     provideRouter(routes),
-    importProvidersFrom(HttpClientModule, TranslateModule.forRoot({
+    importProvidersFrom(
+      HttpClientModule,
+      TranslateModule.forRoot({
         loader: {
-            provide: TranslateLoader,
-            useFactory: createTranslateLoader,
-            deps: [HttpClient],
+          provide: TranslateLoader,
+          useFactory: createTranslateLoader,
+          deps: [HttpClient],
         },
         defaultLanguage: 'en',
-    }), NgxsModule.forRoot([]), NgxsResetPluginModule.forRoot(), NgxsFormPluginModule.forRoot(), NgxsReduxDevtoolsPluginModule.forRoot({ disabled: false }), NgxsLoggerPluginModule.forRoot({ disabled: true }), NgxsStoragePluginModule.forRoot({
+      }),
+      NgxsModule.forRoot([]),
+      NgxsResetPluginModule.forRoot(),
+      NgxsFormPluginModule.forRoot(),
+      NgxsReduxDevtoolsPluginModule.forRoot({ disabled: false }),
+      NgxsLoggerPluginModule.forRoot({ disabled: true }),
+      NgxsStoragePluginModule.forRoot({
         key: [],
-    }), IonicStorageModule.forRoot()),
+      }),
+      IonicStorageModule.forRoot()
+    ),
     provideAnimations()
-],
+  ],
 });
