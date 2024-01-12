@@ -1,7 +1,7 @@
 {
 	"folders": [
 		{
-			"path": "applications/ion-medusa-storefront"
+			"path": "../ion-medusa-storefront"
 		}
 	],
 	"settings": {}
