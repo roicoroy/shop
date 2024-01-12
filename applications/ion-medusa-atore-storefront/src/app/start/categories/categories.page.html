@@ -1,0 +1,10 @@
+<header-component [showSearchBar]="false" [avatar]="avatar" [pageTitle]="pageTitle"></header-component>
+
+<ion-content>
+    <ion-toolbar>
+        <ion-searchbar [placeholder]="'Search products'" inputmode="text" type="text"
+            (ionChange)="onSearchChange($event)" [debounce]="250">
+        </ion-searchbar>
+    </ion-toolbar>
+
+</ion-content>

@@ -1,0 +1,16 @@
+{
+  "name": "medusa-store",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "shop": " cd applications && cd medusa-store && npx medusa develop",
+    "next": "cd applications && cd medusa-store-storefront && yarn dev",
+    "ion": " cd applications && cd ion-medusa-store-storefront && ionic serve",
+    "start:dev": "concurrently \"yarn shop\" \"yarn next\" \"yarn ion\""
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "^8.2.2"
+  }
+}

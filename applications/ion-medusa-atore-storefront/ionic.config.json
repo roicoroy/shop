@@ -1,0 +1,7 @@
+{
+  "name": "ion-medusa-shop-storefront",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular-standalone"
+}
